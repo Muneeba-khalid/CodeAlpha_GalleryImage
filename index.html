@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📸 Image Gallery</h1>
+        <p class="subtitle">CodeAlpha Internship Project</p>
+
+        <!-- Category Filter Buttons -->
+        <div class="categories">
+            <button class="cat-btn active" data-filter="all">All</button>
+            <button class="cat-btn" data-filter="nature">Nature</button>
+            <button class="cat-btn" data-filter="city">City</button>
+            <button class="cat-btn" data-filter="animals">Animals</button>
+            <button class="cat-btn" data-filter="birds">Birds</button>
+            <button class="cat-btn" data-filter="foods">Foods</button>
+            <button class="cat-btn" data-filter="technologies">Technology</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery" id="gallery">
+            
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="./asests/Nature/nature.jpg" alt="Mountain">
+                <div class="category-badge">🌄 Nature</div>
+                <div class="overlay">
+                    <h3>Mountain Peak</h3>
+                    <p>Beautiful mountain landscape with snow</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="./asests/Nature/nature2.jpg" alt="Forest">
+                <div class="category-badge">🌄 Nature</div>
+                <div class="overlay">
+                    <h3>Forest Path</h3>
+                    <p>Serene forest walkway with greenery</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="./asests/Nature/nature3.jpg" alt="Waterfall">
+                <div class="category-badge">🌄 Nature</div>
+                <div class="overlay">
+                    <h3>Waterfall</h3>
+                    <p>Flowing waterfall in dense forest</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="./asests/Nature/nature4 (2).jpg" alt="Lake">
+                <div class="category-badge">🌄 Nature</div>
+                <div class="overlay">
+                    <h3>Peaceful Lake</h3>
+                    <p>Lake with mountain reflection</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="asests/Nature/nature4.jpg" alt="Lake">
+                <div class="category-badge">🌄 Nature</div>
+                <div class="overlay">
+                    <h3>Sunset Lake</h3>
+                    <p>Beautiful sunset over the lake</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="./asests/Nature/nature5.jpg" alt="Nature">
+                <div class="category-badge">🌄 Nature</div>
+                <div class="overlay">
+                    <h3>Green Valley</h3>
+                    <p>Lush green valley view</p>
+                </div>
+            </div>
+
+            <!-- City Images -->
+            <div class="gallery-item" data-category="city">
+                <img src="./asests/Cities/carloyuen-clouds-2517653_1920.jpg" alt="City">
+                <div class="category-badge">🌆 City</div>
+                <div class="overlay">
+                    <h3>City Skyline</h3>
+                    <p>Modern city buildings at dusk</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="./asests/Cities/julius_silver-prague-3010407_1920.jpg" alt="Street">
+                <div class="category-badge">🌆 City</div>
+                <div class="overlay">
+                    <h3>Night Street</h3>
+                    <p>Beautiful city lights at night</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="./asests/Cities/pexels-buildings-1839726_1920.jpg" alt="Skyscrapers">
+                <div class="category-badge">🌆 City</div>
+                <div class="overlay">
+                    <h3>Skyscrapers</h3>
+                    <p>Tall buildings downtown area</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="./asests/Cities/pexels-skyline-1869214_1920.jpg" alt="Traffic">
+                <div class="category-badge">🌆 City</div>
+                <div class="overlay">
+                    <h3>City Traffic</h3>
+                    <p>Busy city streets at night</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="./asests/Cities/soultrain-sunset-8170058_1920.jpg" alt="Sunset">
+                <div class="category-badge">🌆 City</div>
+                <div class="overlay">
+                    <h3>City Sunset</h3>
+                    <p>Beautiful sunset over buildings</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="./asests/Cities/wal_172619-bridge-7779222_1920.jpg" alt="Bridge">
+                <div class="category-badge">🌆 City</div>
+                <div class="overlay">
+                    <h3>City Bridge</h3>
+                    <p>Famous bridge with city view</p>
+                </div>
+            </div>
+
+            <!-- Animals Images -->
+            <div class="gallery-item" data-category="animals">
+                <img src="./asests/Animals/12019-iceland-1979445_1920.jpg" alt="Dog">
+                <div class="category-badge">🐾 Animals</div>
+                <div class="overlay">
+                    <h3>Cute Dog</h3>
+                    <p>Happy dog running in field</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="./asests/Animals/animal.jpg" alt="Tiger">
+                <div class="category-badge">🐾 Animals</div>
+                <div class="overlay">
+                    <h3>Royal Tiger</h3>
+                    <p>Majestic tiger in wild</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="./asests/Animals/animal2.jpg" alt="Deer">
+                <div class="category-badge">🐾 Animals</div>
+                <div class="overlay">
+                    <h3>Forest Deer</h3>
+                    <p>Deer in natural habitat</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="./asests/Animals/hinotoriko-zebra-5522697_1920.jpg" alt="Zebra">
+                <div class="category-badge">🐾 Animals</div>
+                <div class="overlay">
+                    <h3>Wild Zebra</h3>
+                    <p>Zebra roaming in grassland</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="./asests/Animals/pexels-rhinoceros-1837164_1920.jpg" alt="Rhinoceros">
+                <div class="category-badge">🐾 Animals</div>
+                <div class="overlay">
+                    <h3>Rhinoceros</h3>
+                    <p>Majestic rhino in safari</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="./asests/Animals/uschi_du-sheep-3742999_1920.jpg" alt="Sheep">
+                <div class="category-badge">🐾 Animals</div>
+                <div class="overlay">
+                    <h3>Sheep Herd</h3>
+                    <p>Sheep grazing in meadow</p>
+                </div>
+            </div>
+
+            <!-- Birds Images -->
+            <div class="gallery-item" data-category="birds">
+                <img src="./asests/Birds/arminep-grey-heron-8030000_1920.jpg" alt="Heron">
+                <div class="category-badge">🐦 Birds</div>
+                <div class="overlay">
+                    <h3>Grey Heron</h3>
+                    <p>Beautiful heron by the water</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds">
+                <img src="./asests/Birds/bru-no-gull-3491309_1920.jpg" alt="Gull">
+                <div class="category-badge">🐦 Birds</div>
+                <div class="overlay">
+                    <h3>Sea Gull</h3>
+                    <p>Gull flying over ocean</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds">
+                <img src="./asests/Birds/carola68-great-spotted-woodpecker-5261220_1920.jpg" alt="Woodpecker">
+                <div class="category-badge">🐦 Birds</div>
+                <div class="overlay">
+                    <h3>Woodpecker</h3>
+                    <p>Great spotted woodpecker on tree</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds">
+                <img src="./asests/Birds/marjonhorn-bird-7576994_1920.jpg" alt="Bird">
+                <div class="category-badge">🐦 Birds</div>
+                <div class="overlay">
+                    <h3>Colorful Bird</h3>
+                    <p>Beautiful bird in nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds">
+                <img src="./asests/Birds/nickype-flamingo-7086655_1920.jpg" alt="Flamingo">
+                <div class="category-badge">🐦 Birds</div>
+                <div class="overlay">
+                    <h3>Pink Flamingo</h3>
+                    <p>Flamingo standing in water</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds">
+                <img src="./asests/Birds/Owl.jpg" alt="Owl">
+                <div class="category-badge">🐦 Birds</div>
+                <div class="overlay">
+                    <h3>Snowy Owl</h3>
+                    <p>Beautiful owl with big eyes</p>
+                </div>
+            </div>
+
+            <!-- Foods Images -->
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/anilsharma26-dish-7043103_1920.jpg" alt="Dish">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>Delicious Dish</h3>
+                    <p>Traditional food platter</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/mariya_m-pasta-6263653_1920.jpg" alt="Pasta">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>Creamy Pasta</h3>
+                    <p>Delicious pasta with sauce</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/niekverlaan-hamburger-494706_1920.jpg" alt="Burger">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>Juicy Burger</h3>
+                    <p>Classic hamburger with cheese</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/pexels-bowl-1842294_1920.jpg" alt="Bowl">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>Healthy Bowl</h3>
+                    <p>Fresh salad bowl</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/px_steven_be-pizza-6478478_1920.jpg" alt="Pizza">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>Italian Pizza</h3>
+                    <p>Hot pizza with toppings</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/rieracanler-grill-8225405_1920.jpg" alt="Grill">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>BBQ Grill</h3>
+                    <p>Grilled meat and vegetables</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="foods">
+                <img src="./asests/Foods/ritae-noodles-5252012_1920.jpg" alt="Noodles">
+                <div class="category-badge">🍕 Foods</div>
+                <div class="overlay">
+                    <h3>Asian Noodles</h3>
+                    <p>Delicious noodle stir fry</p>
+                </div>
+            </div>
+
+            <!-- Technology Images -->
+            <div class="gallery-item" data-category="technologies">
+                <img src="./asests/Technologies/markusspiske-office-581131_1920.jpg" alt="Office">
+                <div class="category-badge">💻 Tech</div>
+                <div class="overlay">
+                    <h3>Modern Office</h3>
+                    <p>Creative workspace setup</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="technologies">
+                <img src="./asests/Technologies/pexels-apple-1282241_1920.jpg" alt="Apple">
+                <div class="category-badge">💻 Tech</div>
+                <div class="overlay">
+                    <h3>Apple Products</h3>
+                    <p>MacBook and accessories</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="technologies">
+                <img src="./asests/Technologies/pexels-laptop-1846277_1920.jpg" alt="Laptop">
+                <div class="category-badge">💻 Tech</div>
+                <div class="overlay">
+                    <h3>Laptop Setup</h3>
+                    <p>Coding workspace</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="technologies">
+                <img src="./asests/Technologies/theangryteddy-keyboard-338505_1920.jpg" alt="Keyboard">
+                <div class="category-badge">💻 Tech</div>
+                <div class="overlay">
+                    <h3>Mechanical Keyboard</h3>
+                    <p>RGB gaming keyboard</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="technologies">
+                <img src="./asests/Technologies/theglassdesk-turntable-1337986_1920.jpg" alt="Turntable">
+                <div class="category-badge">💻 Tech</div>
+                <div class="overlay">
+                    <h3>Vinyl Turntable</h3>
+                    <p>Vintage music player</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="technologies">
+                <img src="./asests/Technologies/thomaswolter-technology-7656068.jpg" alt="Technology">
+                <div class="category-badge">💻 Tech</div>
+                <div class="overlay">
+                    <h3>Tech Setup</h3>
+                    <p>Modern technology desk</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <span class="prev"><i class="fas fa-chevron-left"></i></span>
+        <span class="next"><i class="fas fa-chevron-right"></i></span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <div class="caption" id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
